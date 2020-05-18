@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Site Bookmarkr</title>
+</head>
+<body onload="fetch_bookmarks()">
+    <h1 class="text-primary text-center">
+        Bookmarkr
+    </h1>
+<div class="container">
+
+    <div class="jumbotron">
+        <div class="form">
+          <h2>Bookmark Your Favourite Sites</h2>
+          <form action="" method="POST" id="myform">
+              <div class="form-group">
+                  <label for="name">Website Name</label>
+                  <input type="text" name="name" id="site_name" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label for="url">Website Url</label>
+                  <input type="text" name="url" id="site_url" class="form-control">
+              </div>
+              <input type="submit" value="Bookmark" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+
+      <div class="bookmarks_results" id="results">
+
+      </div>
+</div>
+    <script src="js/index.js"></script>
+</body>
+</html>
