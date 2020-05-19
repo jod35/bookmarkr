@@ -57,6 +57,10 @@ const bookmark_save=(e)=>{
     e.preventDefault();
 }
 
+const delete_bookmark=(url)=>{
+    console.log(url);
+    
+}
 
 const fetch_bookmarks=()=>{
     //get from localstorage
@@ -76,7 +80,7 @@ const fetch_bookmarks=()=>{
         <div class="jumbotron">
             <h3>${name}</h3> 
             <a class="btn btn-primary" target="_blank" href="${url}">Visit</a>
-            <a class="btn btn-danger" on_click="delete_bookmark('${url}')" target="_blank" href="${url}">Delete</a>
+            <a class="btn btn-danger" on_click="delete_bookmark('${url}')"  href="${url}">Delete</a>
 
         </div>
 
